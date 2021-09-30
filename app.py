@@ -20,12 +20,12 @@ CORS(app)
 spamMail = pickle.load(open('spamMail.pkl','rb'))
 
 @app.route('/')
-@cross_origin()
+# @cross_origin()
 def serve():
     return send_from_directory(app.static_folder, 'index.html')
 
 @app.route("/api",methods=["POST"])
-@cross_origin()
+# @cross_origin()
 def spam():
     
     def stemming(content):
