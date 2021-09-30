@@ -1,0 +1,1 @@
+simple react flask website with a logistic reg model to classify mails
